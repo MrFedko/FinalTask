@@ -13,6 +13,7 @@
 
 void PrintArray(int[] array)
 {
+    Console.WriteLine();
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write($"{array[i]} ");
@@ -35,3 +36,8 @@ int[] EvenNumbers(int[] array)
     Array.Resize(ref array2, count);
     return array2;
 }
+
+
+int [] myarray = Request("Введите натуральные числа через пробел");
+PrintArray(myarray);
+PrintArray(EvenNumbers(myarray));
